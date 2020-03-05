@@ -1,5 +1,7 @@
 #!/bin/bash
 
-x=$1
+echo "Enter a string to search for a list of all filenames in this directory that contain that string, sorted by modification time."
 
-ls -t | grep "$x"
+read string
+
+ls -t | grep "$string"
